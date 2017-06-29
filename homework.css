@@ -1,0 +1,26 @@
+.boxed {
+  border: 1px solid black ;
+  padding: 2cm 4cm 3cm 4cm;
+  margin: auto;
+  text-align: center;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+
+.buttonC {
+  margin: auto;
+  display: block;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+#boxed {
+  background-color: red;
+  height: 200px;
+}
