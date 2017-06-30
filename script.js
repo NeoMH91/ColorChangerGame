@@ -1,39 +1,11 @@
-<html>
-
-<head>
-
-<style>
-body {background-color: blue;}
-h1   {color: black;}
-p    {color: red;}
-
-</style>
-
-</head>
- <link rel="stylesheet" href="homework.css">
-
-<body>
-  <h1 id="randomNumber"> 0 </h1>
-
-  <div class="wrapper">
-<button id = "buttonC" onclick="compareColors()">Click here if color match</button>
-</div>
-
-<div id="boxed">
-</div>
-
-
-<script>
 var color1 = ""
 var color2 = ""
 var colorChanges = setInterval(function(){ setColor() },1000);
 var numberChanges = setInterval(function(){ generateNumber() }, 1000);
 var colorChanges2 = setInterval(function(){ setColor2() }, 1000);
-
 function generateNumber() {
  var randomNum = getRandomInt()
 }
-
 var a = 0;
 function compareColors() {
   if (color1 === color2) {
@@ -45,15 +17,12 @@ function compareColors() {
    a = 0
  }
      }
-
-
 function setColor() {
    var randomNum = getRandomInt()
    var colors = ["blue","red","yellow","purple"]
    var a = document.body.style.backgroundColor = colors[randomNum]
    color1 = a
 }
-
 function setColor2() {
   var randomNum = getRandomInt2()
   var colors = ["blue","red","yellow","purple"]
@@ -61,28 +30,62 @@ function setColor2() {
   var a = x.style.backgroundColor = colors[randomNum]
   color2 = a
 }
-
 function getRandomInt(min, max) {
  //gets a random number 0-3, ie 4 different numbers
  min = Math.ceil(0);
  max = Math.floor(4);
  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
-
 function getRandomInt2(min, max) {
  //gets a random number 0-3, ie 4 different numbers
  min = Math.ceil(0);
  max = Math.floor(4);
  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
-
 function gameOver() {
   document.getElementById("randomNumber").innerHTML = 0;
   alert("Game over!, Try harder next time!")
 }
 
-</script>
-</body>
 
 
-</html>
+
+
+
+
+
+
+
+
+
+
+// var color1 = "white"
+// var color2 = "white"
+//
+// function compareColors() {
+//  if (color1 === color2) {
+//   document.getElementById("randomNumber") += 1
+//  }
+// }
+//
+// function sayHello(name) {
+//    if (document.body.style.backgroundColor === "red") {
+//      document.body.style.backgroundColor = "blue";
+//    } else {
+//    document.body.style.backgroundColor = "red";
+// } }
+//
+//
+//
+// function setColor() {
+//     var randomNum = getRandomInt()
+//     var colors = ["blue","red","yellow","purple"]
+//     document.body.style.backgroundColor = colors[randomNum]
+// }
+//
+// function getRandomInt(min, max) {
+//   //gets a random number 0-3, ie 4 different numbers
+//   min = Math.ceil(0);
+//   max = Math.floor(4);
+//   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+// }
